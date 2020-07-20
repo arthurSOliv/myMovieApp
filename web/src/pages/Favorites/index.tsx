@@ -27,7 +27,7 @@ const Favorites: React.FC = () => {
       const fav = response.data;
       setFavorites(fav);
     });
-  });
+  }, []);
 
   useEffect(() => {
     const dataMovie: Movie[] = [];
@@ -63,8 +63,6 @@ const Favorites: React.FC = () => {
       alert('Error to delete');
       return;
     }
-
-    window.location.reload();
   }
 
   return (

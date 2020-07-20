@@ -49,14 +49,9 @@ export const MoviesDiv = styled.div`
 
     display: flex;
     align-items: center;
-    transition: transform 0.2s;
 
     & + span {
       margin-top: 15px;
-    }
-
-    &:hover {
-      transform: translateX(10px);
     }
 
     img {
